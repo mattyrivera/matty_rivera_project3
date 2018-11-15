@@ -9,15 +9,35 @@ catQuiz.init = function(){
 catQuiz.calculateResults = function(){
     $('form').on('submit', function(event){
         event.preventDefault();
-        console.log('yayyy');
+        // console.log('yayyy');
     });
 };
 
+// const catQuestion1 = $("input[name=catQuestion1]:checked").val();
+// console.log(catQuestion1);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------------------------------------------
+//      ::DOCUMENT READY
 
 $(function(){
 
     catQuiz.init();
+
+
 
 });
