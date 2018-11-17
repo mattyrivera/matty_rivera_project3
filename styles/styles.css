@@ -141,6 +141,18 @@ html {
   border: 2px solid tomato;
   margin: 0 auto; }
 
+header {
+  background: url("/assets/img-main.jpg") fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* min-height: 800px; */ }
+
+.results-container {
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+
 .fieldset-container {
   border: none; }
 
