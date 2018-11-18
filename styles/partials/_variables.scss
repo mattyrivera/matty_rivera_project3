@@ -1,3 +1,4 @@
+// COLOR VARIABLES
 $test-color: tomato;
 $primary-color: #89d3dd;
 // rgba (137, 211, 221);
@@ -7,3 +8,29 @@ $darkest-color: #2a2a2a;
 // rgba (42, 42, 42);
 $bright-color: #fbb040;
 // rgba (251, 176, 64);
+$off-light: #F0EFED;
+
+// FONT VARIABLES
+$font-header: 'Roboto', sans-serif;
+$font-body: 'Roboto Slab', serif;
+
+// MIXINS
+@mixin heading-font($size){
+    font-family: 'Roboto Slab', serif;
+    font-size: ($size);
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: $darkest-color;
+    line-height: 1;
+}
+
+@mixin body-font ($size){
+    font-family: 'Roboto', sans-serif;
+    font-size: ($size);
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: $darkest-color;
+    line-height: 1.2;
+}
+
+
