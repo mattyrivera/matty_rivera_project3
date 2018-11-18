@@ -1,20 +1,79 @@
 header {
-    background: url("/assets/img-main.jpg") fixed;
+    // background: url("/assets/img-main3.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
-    // background: tomato;
+    background: $primary-color;
     /* min-height: 800px; */
 }
 
-// .cat-question {
-//     background-size: cover;
-//     background-position: center;
-//     height: 100vh;
-// }
+.cat-question {
+    // background-size: cover;
+    // background-position: center;
+    // height: 100vh;
+}
 
 .results-container {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+    // background-size: cover;
+    // background-position: center;
+    // height: 100vh;
 }
+
+// .fieldset-container {
+//     display: flex;
+//     flex-direction: column;
+// }
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading-title {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+// ANIMATION STARTS
+
+.svg-cat {
+    display: block;
+    // align-items: center;
+    margin: 0 auto;
+}
+
+path {
+	stroke: #fff;
+	fill: none;
+	stroke-dasharray: 1800;
+	opacity: 1;
+	animation: stroke 6s cubic-bezier(0,0.23,1,0.1);
+}
+
+@keyframes stroke {
+	0% {
+		opacity: 0;
+		stroke-dashoffset: 1800;
+	}
+
+	20% {
+		opacity: 0.3;
+
+	}
+
+	50% {
+		opacity: 0.5;
+	
+	}
+
+	100% {
+		opacity: 1;
+		stroke-dashoffset: 0;
+	}
+}
+
+// ANIMATION ENDS
