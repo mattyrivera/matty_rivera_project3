@@ -1,22 +1,18 @@
-// -init
 const catQuiz = {};
 catQuiz.answers = [];
 const cats = [
     {
         cat : "Congratulations, you are a Sphynx cat!",
-        img: "assets/img-2.jpg",
-        desc: "soooo cute",
+        img: "assets/img-1.png",
     },
     {
         cat: "Congratulations, you are a Russian Blue cat!",
-        img: "assets/nap1.jpg",
-        desc: "literally the cutest cat ever",
+        img: "assets/img-2.png",
 
     },
     {
         cat: "Congratulations, you are a Persian Cat!",
-        img: "assets/persiantest1.png",
-        desc: "fluffy baby",
+        img: "assets/img-3.png",
     }
 ];
 
@@ -67,23 +63,20 @@ catQuiz.calculateResults = function(){
         if (total >= 5 && total <= 8) {
             $(".results-section-container").append(`
             <h2 class="result-title">${cats[0].cat}</h2>
-            <img class="result-img" src="${cats[0].img}">
-            <p class="result-desc">${cats[0].desc}</p>
+            <img class="result-img" src="${cats[0].img}" alt="illustration of a Sphynx cat">
             `).css('background-color', "#89d3dd")
         } 
 
         else if (total >= 9 && total <= 12) {
             $(".results-section-container").append(`
             <h2 class="result-title">${cats[1].cat}</h2>
-            <img class="result-img" src="${cats[1].img}">
-            <p class="result-desc">${cats[1].desc}</p>
+            <img class="result-img" src="${cats[1].img}" alt="illustration of a Russian Blue cat">
             `)
         } 
         else if (total >= 13 && total <= 15) {
             $(".results-section-container").append(`
             <h2 class="result-title">${cats[2].cat}</h2>
-            <img class="result-img" src="${cats[2].img}">
-            <p class="result-desc">${cats[2].desc}</p>
+            <img class="result-img" src="${cats[2].img}" alt="illustration of a Persian cat">
             `)
 
         };
