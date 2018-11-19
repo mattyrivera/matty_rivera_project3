@@ -71,9 +71,9 @@ header {
 path {
 	stroke: $accent-color;
 	fill: none;
-	stroke-dasharray: 1600;
+	stroke-dasharray: 1400;
 	opacity: 1;
-	animation: stroke 3s cubic-bezier(0,0.23,1,0.1);
+	animation: stroke 2s cubic-bezier(0,0.23,1,0.1);
 }
 
 @keyframes stroke {

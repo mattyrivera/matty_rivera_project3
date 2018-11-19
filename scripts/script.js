@@ -29,6 +29,7 @@ console.log(cats);
 
 catQuiz.init = function(){
     catQuiz.calculateResults();
+    catQuiz.buttonAction();
 };
 
 catQuiz.calculateResults = function(){
@@ -61,44 +62,72 @@ catQuiz.calculateResults = function(){
         for (k = 0; k < catQuiz.answers.length; k++){
             total += catQuiz.answers[k];
         }
-        console.log(total);
+        // console.log(total);
 
         //"If statements for results section."
-        // $(".results-container").html("");
+
+        $(".final-result").show();
+        $(".results-section-container").html("");
 
         if (total >= 5 && total <= 8) {
-            $(".results-container").append(`
+            $(".results-section-container").append(`
             <h2 class="result-title">${cats[0].cat}<h2>
             <img class="result-img" src="${cats[0].img}">
             <p class="result-desc">${cats[0].desc}</p>
-            `)
+            `).css('background-color', "#89d3dd")
         } 
 
-        // FIX THE CODE IN THESE ANSWERS
-
         else if (total >= 9 && total <= 12) {
-            $(".results-container").append(`
+            $(".results-section-container").append(`
             <h2 class="result-title">${cats[1].cat}<h2>
             <img class="result-img" src="${cats[1].img}">
             <p class="result-desc">${cats[1].desc}</p>
             `)
         } 
         else if (total >= 13 && total <= 15) {
-            $(".results-container").append(`
+            $(".results-section-container").append(`
             <h2 class="result-title">${cats[2].cat}<h2>
             <img class="result-img" src="${cats[2].img}">
             <p class="result-desc">${cats[2].desc}</p>
             `)
-        // } 
-        // else if (total >= 13 && total <= 15) {
-        //     $(".results-container").append(`
-        //     <h2 class="result-title">${cats[3].cat}<h2>
-        //     <img class="result-img" src="${cats[3].img}">
-        //     <p class="result-desc">${cats[3].desc}</p>
-        //     `)
+
         };
+        // Scroll function for results button
+        $("html, body").animate({
+            scrollTop: $(".final-result").offset().top
+        }, 1000);
     });
 };
+
+// Scroll functions
+
+catQuiz.buttonAction = function() {
+    $(".button-next").on("click", function(){
+        let button = $(this).data("button");
+
+        if (button == 1) {
+            $("html, body").animate({
+                scrollTop: $(".question-section").offset().top
+            }, 1000);
+        } else if (button == 2) {
+            $("html, body").animate({
+                scrollTop: $("#second").offset().top
+            }, 1000);
+        } else if (button == 3) {
+            $("html, body").animate({
+                scrollTop: $("#third").offset().top
+            }, 1000);
+        } else if (button == 4) {
+            $("html, body").animate({
+                scrollTop: $("#fourth").offset().top
+            }, 1000);
+        } else if (button == 5) {
+            $("html, body").animate({
+                scrollTop: $("#fifth").offset().top
+            }, 1000);
+        }
+    })
+}
 
 // -------------------------------------------------------------------------
 //      ::DOCUMENT READY

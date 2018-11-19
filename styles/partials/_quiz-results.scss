@@ -1,0 +1,42 @@
+.final-result {
+    background: $darkest-color;
+    padding: 30px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.results-heading {
+    width: 100%;
+}
+
+.results-section-container {
+    background: $accent-color;
+    border-radius: 100px;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.result-title {
+    @include heading-font(3rem);
+    padding: 0;
+    margin: 20px 0;
+}
+
+.result-desc {
+    @include body-font(2rem);
+    padding: 0;
+    margin: 0;
+}
+
+.result-img {
+    display: block;
+}
+

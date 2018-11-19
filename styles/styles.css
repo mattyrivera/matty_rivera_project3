@@ -236,10 +236,10 @@ header {
 path {
   stroke: #f8aca6;
   fill: none;
-  stroke-dasharray: 1600;
+  stroke-dasharray: 1400;
   opacity: 1;
-  -webkit-animation: stroke 3s cubic-bezier(0, 0.23, 1, 0.1);
-  animation: stroke 3s cubic-bezier(0, 0.23, 1, 0.1); }
+  -webkit-animation: stroke 2s cubic-bezier(0, 0.23, 1, 0.1);
+  animation: stroke 2s cubic-bezier(0, 0.23, 1, 0.1); }
 
 @-webkit-keyframes stroke {
   0% {
@@ -419,11 +419,6 @@ input[type="radio"] {
     -webkit-box-shadow: 0 0 8px #2a2a2a;
     box-shadow: 0 0 8px #2a2a2a; }
 
-.results-container {
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh; }
-
 input[type="submit"] {
   background: #f8aca6;
   border: none;
@@ -450,3 +445,67 @@ input[type="submit"] {
     right: 4px;
     -webkit-box-shadow: 0 0 8px #2a2a2a;
     box-shadow: 0 0 8px #2a2a2a; }
+
+.final-result {
+  background: #2a2a2a;
+  padding: 30px 0;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none; }
+
+.results-heading {
+  width: 100%; }
+
+.results-section-container {
+  background: #f8aca6;
+  border-radius: 100px;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+
+.result-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2a2a2a;
+  line-height: 1;
+  padding: 0;
+  margin: 20px 0; }
+
+.result-desc {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #2a2a2a;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0; }
+
+.result-img {
+  display: block; }

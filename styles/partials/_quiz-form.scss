@@ -138,14 +138,6 @@ input[type="radio"] {
     }
 }
 
-// RESULTS SECTION
-
-.results-container {
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-}
-
 input[type="submit"] {
     background: $accent-color;
     border: none;
@@ -169,5 +161,3 @@ input[type="submit"] {
         box-shadow: 0 0 8px $darkest-color;    
     }
 }
-
-// RESULTS STYLING ENDS

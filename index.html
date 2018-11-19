@@ -164,7 +164,7 @@
 
                 </div>
                 <div class="button-welcome-container">
-                    <button class="button-welcome">Find out</button>
+                    <button class="button-welcome button-next" data-button="1">Find out</button>
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
     <main>
         <div class="wrapper">
             <form action="" class="questionaire-container">
-                <div class="question-section">
+                <div class="question-section" id="first">
                     <div class="cat-question question-container1">
                         <fieldset class="fieldset-container">
                             <h2 class="question-container">Place holder question? 1</h2>
@@ -189,12 +189,12 @@
                                 <label for="cat-q1-a3" class="label-answer">Answer c</label>
                             </div>
                             <div class="button-next-container">
-                                <button class="button-next next-1">Next</button>
+                                <button class="button-next next-1" data-button="2">Next</button>
                             </div>
                         </fieldset>
                     </div>
                 </div>
-                <div class="question-section">
+                <div class="question-section" id="second">
                     <div class="cat-question question-container2">
                         <fieldset class="fieldset-container">
                             <h2 class="question-container">Place holder question? 2</h2>
@@ -211,12 +211,12 @@
                                 <label for="cat-q2-a3" class="label-answer">Answer c</label>
                             </div>
                             <div class="button-next-container">
-                                <button class="button-next next-2">Next</button>
+                                <button class="button-next next-2" data-button="3">Next</button>
                             </div>
                         </fieldset>
                     </div>
                 </div>
-                <div class="question-section">
+                <div class="question-section" id="third">
                     <div class="cat-question question-container3">
                         <fieldset class="fieldset-container">
                             <h2 class="question-container">Place holder question? 3</h2>
@@ -233,12 +233,12 @@
                             <label for="cat-q3-a3" class="label-answer">Answer c</label>
                             </div>
                             <div class="button-next-container">
-                                <button class="button-next next-3">Next</button>
+                                <button class="button-next next-3" data-button="4">Next</button>
                             </div>
                         </fieldset>
                     </div>
                 </div>
-                <div class="question-section">
+                <div class="question-section" id="fourth">
                     <div class="cat-question question-container4">
                         <fieldset class="fieldset-container">
                             <h2 class="question-container">Place holder question? 4</h2>
@@ -255,12 +255,12 @@
                             <label for="cat-q4-a3" class="label-answer">Answer c</label>
                             </div>
                             <div class="button-next-container">
-                                <button class="button-next next-4">Next</button>
+                                <button class="button-next next-4" data-button="5">Next</button>
                             </div>
                         </fieldset>
                     </div>
                 </div>
-                <div class="question-section">
+                <div class="question-section" id="fifth">
                     <div class="cat-question question-container5">
                         <fieldset class="fieldset-container">
                             <h2 class="question-container">Place holder question? 5</h2>
@@ -284,13 +284,19 @@
                     </div>
                 </div>
             </form>
-            <div class="results-container">
-                <!-- <h2></h2>
-                <img src="" alt="">
-                <p></p> -->
-            </div>
         </div>
     </main>
+    <section class="final-result">
+        <div class="results-heading">
+            <div class="wrapper">
+                <div class="results-section-container">
+                </div>
+            </div>
+        </div>
+    </section class="final-result">
+    <footer>
+        
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script src="scripts/script.js"></script>
 </body>
