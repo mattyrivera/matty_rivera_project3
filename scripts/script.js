@@ -3,18 +3,18 @@ const catQuiz = {};
 catQuiz.answers = [];
 const cats = [
     {
-        cat : "Sphynx",
+        cat : "Congratulations, You are a Sphynx cat!",
         img: "assets/img-2.jpg",
         desc: "soooo cute",
     },
     {
-        cat: "Russian Blue",
+        cat: "Congratulations, You are a Russian Blue cat!",
         img: "assets/nap1.jpg",
         desc: "literally the cutest cat ever",
 
     },
     {
-        cat: "Persian",
+        cat: "Congratulations, You are a Persian Cat!",
         img: "assets/persiantest1.png",
         desc: "fluffy baby",
     }
@@ -71,7 +71,7 @@ catQuiz.calculateResults = function(){
 
         if (total >= 5 && total <= 8) {
             $(".results-section-container").append(`
-            <h2 class="result-title">${cats[0].cat}<h2>
+            <h2 class="result-title">${cats[0].cat}</h2>
             <img class="result-img" src="${cats[0].img}">
             <p class="result-desc">${cats[0].desc}</p>
             `).css('background-color', "#89d3dd")
@@ -79,14 +79,14 @@ catQuiz.calculateResults = function(){
 
         else if (total >= 9 && total <= 12) {
             $(".results-section-container").append(`
-            <h2 class="result-title">${cats[1].cat}<h2>
+            <h2 class="result-title">${cats[1].cat}</h2>
             <img class="result-img" src="${cats[1].img}">
             <p class="result-desc">${cats[1].desc}</p>
             `)
         } 
         else if (total >= 13 && total <= 15) {
             $(".results-section-container").append(`
-            <h2 class="result-title">${cats[2].cat}<h2>
+            <h2 class="result-title">${cats[2].cat}</h2>
             <img class="result-img" src="${cats[2].img}">
             <p class="result-desc">${cats[2].desc}</p>
             `)
@@ -102,7 +102,8 @@ catQuiz.calculateResults = function(){
 // Scroll functions
 
 catQuiz.buttonAction = function() {
-    $(".button-next").on("click", function(){
+    $(".button-next").on("click", function(e){
+        e.preventDefault();
         let button = $(this).data("button");
 
         if (button == 1) {

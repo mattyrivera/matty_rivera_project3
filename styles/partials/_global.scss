@@ -18,3 +18,10 @@ main {
     background: $off-light;
 }
 
+// ------------Responsive Design -------------------------
+
+@media (max-width: 560px) {
+    .wrapper {
+        width: 90%;
+    }
+}

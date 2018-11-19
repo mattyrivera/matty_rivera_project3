@@ -25,8 +25,8 @@ header {
     font-family: 'Playfair Display';
     color: $off-light;
     text-align: center;
-    padding: 0;
-    margin: 0 200px;
+    padding: 0 200px;
+    margin: 0;
 }
 
 .button-welcome-container {
@@ -99,3 +99,58 @@ path {
 }
 
 // ANIMATION ENDS
+
+
+// ------------Responsive Design -------------------------
+
+@media (max-width: 1140px) {
+    .heading-title {
+    padding: 0 145px;
+    }
+}
+
+
+@media (max-width: 912px) {
+    .heading-title {
+    padding: 0 110px;
+    }
+}
+
+@media (max-width: 774px) {
+    .heading-title {
+    padding: 0 55px;
+    }
+}
+
+
+@media (max-width: 765px) {
+    .heading-title {
+    font-size: 6rem;
+    padding: 0 50px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .heading-container {
+    border-radius: 60px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        background: $darkest-color;
+    }
+    .heading-title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .svg-cat {
+        padding-top: 10px;
+    }
+    .button-welcome-container {
+        padding-top: 10px;
+    }
+}
