@@ -3,26 +3,21 @@ const catQuiz = {};
 catQuiz.answers = [];
 const cats = [
     {
-        cat : "Congratulations, You are a Sphynx cat!",
+        cat : "Congratulations, you are a Sphynx cat!",
         img: "assets/img-2.jpg",
         desc: "soooo cute",
     },
     {
-        cat: "Congratulations, You are a Russian Blue cat!",
+        cat: "Congratulations, you are a Russian Blue cat!",
         img: "assets/nap1.jpg",
         desc: "literally the cutest cat ever",
 
     },
     {
-        cat: "Congratulations, You are a Persian Cat!",
+        cat: "Congratulations, you are a Persian Cat!",
         img: "assets/persiantest1.png",
         desc: "fluffy baby",
     }
-    // {
-    //     cat: "Domestic Shorthair",
-    //     img: "assets/img-4.jpg",
-    //     desc: "happy cat"
-    // }
 ];
 
 console.log(cats);
@@ -66,7 +61,7 @@ catQuiz.calculateResults = function(){
 
         //"If statements for results section."
 
-        $(".final-result").show();
+        $(".final-result").css('display', 'flex');
         $(".results-section-container").html("");
 
         if (total >= 5 && total <= 8) {

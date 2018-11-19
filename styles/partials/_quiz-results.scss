@@ -1,5 +1,5 @@
 .final-result {
-    background: $darkest-color;
+    background: $off-light;
     padding: 30px 0;
     min-height: 100vh;
     display: flex;
@@ -40,3 +40,18 @@
     display: block;
 }
 
+// ------------Responsive Design -------------------------
+
+@media (max-width: 965px) {
+    .results-section-container h2 {
+        padding: 0 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .results-section-container {
+        background: $accent-color;
+        border-radius: 60px;
+        padding: 30px 0;
+    }
+}

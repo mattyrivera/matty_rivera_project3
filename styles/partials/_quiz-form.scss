@@ -6,7 +6,6 @@
 .cat-question {
     background-size: cover;
     background-position: center;
-    background: red;
     height: 100%;
     border-radius: 100px;
     padding: 30px 50px;
@@ -17,7 +16,7 @@
 }
 
 .question-section {
-    height: 100vh;
+    min-height: 100vh;
     padding: 40px 0;
 }
 
@@ -47,14 +46,10 @@
     
 }
 
-// ANSWER CONTAINERS
-
 .answer-container {
     display: flex;
     align-items: center;
 }
-
-
 
 // RADIO-BUTTON STYLES ---- STARTS ---
 
@@ -121,10 +116,15 @@ input[type="radio"] {
         background-color: $primary-color-shade;
     }
 }
+.button-next-container{
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+}
 
 .button-next {
-    // background: $primary-color;
     border: none;
+    margin-top: 20px;
     padding: 10px 20px;
     border-radius: 10px;
     @include body-font (1.8rem);
@@ -145,15 +145,16 @@ input[type="radio"] {
 input[type="submit"] {
     background: $accent-color;
     border: none;
+    margin-top: 20px;
     padding: 10px 20px;
     border-radius: 10px;
     @include body-font (1.8rem);
     text-transform: uppercase;
     font-weight: 700;
     box-shadow: -1px 1px $off-light, 
-    -2px 2px $off-light, 
-    -3px 3px $off-light,
-    -4px 4px 10px $darkest-color;
+                -2px 2px $off-light, 
+                -3px 3px $off-light,
+                -4px 4px 10px $darkest-color;
     transition: background-color 1s ease-out;
     &:hover {
         background-color: $accent-color-shade;
