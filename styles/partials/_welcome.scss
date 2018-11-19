@@ -44,16 +44,16 @@ header {
     box-shadow: -1px 1px $off-light, 
                 -2px 2px $off-light, 
                 -3px 3px $off-light,
-                -4px 4px $off-light;
-    transition: background-color 0.5s ease-out;
+                -4px 4px 6px $off-light;
+    transition: background-color 1s ease-out;
     &:hover {
-        background-color: $accent-color;
+        background-color: $primary-color-shade;
     }
     &:active {
         position: relative;
         bottom: -4px;
         right: 4px;
-        box-shadow: 0 0 $off-light;    
+        box-shadow: 0 0 4px $off-light;    
     }
 }
 
